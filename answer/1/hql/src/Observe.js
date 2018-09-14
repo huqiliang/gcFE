@@ -8,7 +8,7 @@ export default class Observe {
     return this.proxy(data);
   }
   observe(data) {
-    if (!data || typeof data !== "object") return data; // 如果不是对象直接返回值
+    if (_.isEmpty(data) || !_.isObject(data)) return data; // 如果不是对象直接返回值
     return new Observe(data); // 对象调用Observe
   }
   proxy(data) {
