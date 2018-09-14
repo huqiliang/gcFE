@@ -19,4 +19,3 @@ vm.$data.a = "111";
 vm.$data.b = 200;
 vm.$data.arr.push(100);
 console.log(vm.$data.a);
-console.log(vm.$data.arr);

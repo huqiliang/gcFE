@@ -5,7 +5,13 @@
   "main": "./src/index.js",
   "author": "huqiliang",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./test/index.html"
+  },
   "dependencies": {
     "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "parcel": "^1.9.7"
   }
 }
