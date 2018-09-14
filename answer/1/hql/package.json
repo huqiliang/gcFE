@@ -1,0 +1,11 @@
+{
+  "name": "wue",
+  "version": "1.0.0",
+  "description": "learn vue ",
+  "main": "./src/index.js",
+  "author": "huqiliang",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
