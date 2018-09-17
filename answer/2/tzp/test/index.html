@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script type="text/javascript" src="../dist/view.min.js"></script>
+</head>
+
+<body>
+    <h2>View the console to verify</h2>
+</body>
+<script>
+    /*test*/
+    var testObj = {
+        str: 1,
+        arr: [1, 2],
+        obj: {
+            str: 1,
+            arr: [1, 2]
+        }
+    };
+    var vm = new View({
+        data: testObj
+    });
+    vm._data.str;
+    vm._data.arr;
+    vm._data.obj.str;
+    vm._data.obj.arr;
+    vm._data.str = 2 ;
+    vm._data.arr.push(3);
+    vm._data.obj.str = 2;
+    vm._data.obj.arr.push(3);
+</script>
+
+</html>
